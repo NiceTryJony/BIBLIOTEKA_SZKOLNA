@@ -1,0 +1,92 @@
+<!--
+                           / // // //        // //           // //         //  //    // // //
+                         / //            // /    / //    // /    / //      // //     //
+                        // /             // /    / //    // /    / //      ////      //
+                        // /             // /    / //    // /    / //      //X       // // //
+                        // /             // /    / //    // /    / //      //\\      //
+                         / //            // /    / //    // /    / //      // \\     //
+                          / // // //        // //            // //         //  \\    // // //
+-->
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title>Biblioteka</title>
+        <meta charset="utf-8">
+    </head>
+<body>
+<style>
+    body{
+        margin-left: 35%;
+        margin-right: 30%;
+        margin-top:10%;
+        background-image: url(https://images.inc.com/uploaded_files/image/1920x1080/getty_695858178_370363.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .formularz{
+        padding: 5px;
+        width:450px;
+        height:auto;
+        background-color:rgba(199, 198, 152, 0.7);
+        text-align: center;
+        border-radius: 5%;
+        font-size: large;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    h1{
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+    }
+    .inputs{
+        background-color: antiquewhite;
+        border: none;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        font-size: 85%;
+    }
+    button{
+        margin-left: 10px;
+        width: 108px;
+        height: 18px;
+        background-color: antiquewhite;
+        color:crimson;
+        transition: all 0.5s ease-in;
+    }
+    button:hover{
+        width: 112px;
+        height: 22px;
+        transform: scale(1.1);
+    }
+    #zar_btn{
+        width: 108px;
+        height: 18px;
+        background-color: antiquewhite;
+        color:crimson;
+        transition: all 0.5s ease-in;
+    }
+    #zar_btn:hover{
+        width: 112px;
+        height: 22px;
+        transform: scale(1.1);
+    }
+</style>
+    <section class="formularz">
+        <h1>Rejestracja Do Biblioteki</h1>
+        <form method="post" action="bd_rejestracja.php">
+            EMAIL:
+            <br><input type="email" name="email" class="inputs" required><br>
+            HASŁO:
+            <br><input type="password" name="haslo" class="inputs" maxlength="12" minlenght="6" required><br>
+            ADRES ZAMIESZKANIA:
+            <br><input type="text" name="adres_zam" class="inputs" required><br>
+            MIASTO:
+            <br><input type="text" name="miasto" class="inputs" required><br>
+            NUMER TELEFONU <br>(np. 000 000 000):
+            <br><input type="tel" name="numer_tel" class="inputs" required="10" placeholder="NIE PISAĆ +48!!!"><br><br>
+            <input type="submit" name="zar" value="ZAREJESTRUJ" id="zar_btn" width="zar_btn">
+            <button><a href="logowanie.html">ZALOGUJ</a></button>
+        </form>
+    </section>
+</body>
+</html>
